@@ -1,0 +1,124 @@
+﻿<body>
+    <!-- Search Wrapper Area Start -->
+    <!-- ##### Main Content Wrapper Start ##### -->
+    <div class="main-content-wrapper d-flex clearfix">
+
+        <!-- Mobile Nav (max width 767px)-->
+        <div class="mobile-nav">
+            <!-- Navbar Brand -->
+            <div class="amado-navbar-brand">
+                <a href="index.html"><img src="/content/img//core-img/logo.png" alt=""></a>
+            </div>
+            <!-- Navbar Toggler -->
+            <div class="amado-navbar-toggler">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <!-- Header Area Start -->
+        <header class="header-area clearfix">
+           
+            <!-- Close Icon -->
+            <div class="nav-close">
+                <i class="fa fa-close" aria-hidden="true"></i>
+            </div>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="@Url.Action("index","Home")"><img src="/content/img//core-img/logo.png" alt=""></a>
+            </div>
+            <!-- Amado Nav -->
+            <nav class="amado-nav">
+                <ul>
+                    <li class="active"><a href="@Url.Action("index","Home")" style="font-family:Arial">ANA SAYFA</a></li>
+                    <li><a href="@Url.Action("index","AlisVeris")" style="font-family:Arial">ALIŞVERİŞ</a></li>
+                    @*<li><a href="@Url.Action("urunler","Home")" style="font-family:Arial">ÜRÜNLER</a></li>*@
+                    <li><a href="@Url.Action("sepetim","Home")" style="font-family:Arial">SEPETİM</a></li>
+                    <li><a href="@Url.Action("odemesayfasi","Home")" style="font-family:Arial">ÖDEME SAYFASI</a></li>
+                </ul>
+            </nav>
+            <!-- Button Group -->
+            <div class="amado-btn-group mt-30 mb-100">
+                <a href style="font-family:Arial" ="#" class="btn amado-btn mb-15">Canlı Yardım</a>
+                @*<a href="#" class="btn amado-btn active">Canlı Yardım </a>*@
+            </div>
+            <!-- Cart Menu -->
+            <div class="cart-fav-search mb-100">
+                <a href="@Url.Action("sepetim","Home")"><img src="/content/img//core-img/cart.png" alt=""> Sepetim <span>(0)</span></a>
+                @*<a href style="font-family:Arial=" #" class="fav-nav"><img src="/content/img//core-img/favorites.png" alt=""> Favori </a>*@
+                <a href style="font-family:Arial=" #" class="search-nav"><img src="/content/img//core-img/search.png" alt=""> Arama</a>
+            </div>
+            <!-- Social Button -->
+            <div class="social-info d-flex justify-content-between">
+                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+        </header>
+        <!-- Header Area End -->
+        <!-- Product Catagories Area Start -->
+        <div class="products-catagories-area clearfix">
+            <div class="amado-pro-catagory clearfix">
+
+                <!--Sliderr başlangıç-->
+
+                <link href="/content/slider/dist/skitter.css" type="text/css" media="all" rel="stylesheet" />
+                <link href="/content/slider/css/styles.css" type="text/css" media="all" rel="stylesheet" />
+
+                <div id="page">
+                    <h1>
+                        @*Vibrakim
+                            <small>Endüstriyel ilaçlar</small>*@
+                    </h1>
+                    <div id="content">
+                        <div class="owl-carousel">
+                            <div style="position:relative">
+                                <img src="~/Content/slider/images/example/resim(1).png" />
+                                <p style="position:absolute;top:0"></p>
+                            </div>
+                            <div style="position:relative;">
+                                <img src="~/Content/slider/images/example/resim(2).png" />
+                                <p style="position:absolute;top:50px"></p>
+                            </div>
+                            <div class="owl-carousel">
+                                <div style="position:relative">
+                                    <img src="~/Content/slider/images/example/resim(3).png" />
+                                    <p style="position:absolute;top:0"></p>
+                                </div>
+                            </div>
+                            <div class="owl-carousel">
+                                <div style="position:relative">
+                                    <img src="~/Content/slider/images/example/resim(7).png" />
+                                    <p style="position:absolute;top:0"></p>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div> 
+                    <h2 style="font-family:Arial;font:bold">Hakkımızda</h2>
+                    <p style="font-family:Arial">
+                        Vibrakim olarak kurucularımızın sanayi sektöründeki on yılı aşkın çalışmaları ve özellikle
+                        uzmanlaştıkları alan olan yüzey işlem prosesleri, sarf malzemeleri ve kimyasalları üzerindeki
+                        deneyimlerinden güç alarak, üreticilerimize en kaliteli ürünü en uygun maliyetlerle temin
+                        edebilmek için kurulmuş bulunmaktayız.
+                        Türkiye’de üreticilerimizin bir çok alanda en sık karşılaştığı sorunlardan biri olan; üretimlerinde
+                        kullandıkları hammaddeleri, yardımcı ürünleri ve sarf malzemeleri ithal ve pahalı olarak
+                        tedarik etmek zorunda kalmaları ya da aynı kalitede yerli ikameleri tedarik etmekte güçlük
+                        çekmelerinden dolayı sektörümüzde uzmanlaştığımız aşağıdaki alanlardaki yerli ürünlerimizle
+                        hizmet sunmaktayız.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+</body>
+<!--Sliderr Bitiş-->
+<!-- Product Catagories Area End -->
+<!-- ##### Main Content Wrapper End ##### -->
+<!-- ##### Newsletter Area Start ##### -->

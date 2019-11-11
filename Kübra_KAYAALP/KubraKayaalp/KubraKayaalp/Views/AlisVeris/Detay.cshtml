@@ -1,0 +1,85 @@
+﻿@using VibraKimWeb.BOL.Entities
+@model Urun
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <div class="main-content-wrapper d-flex clearfix">
+
+        <!-- Mobile Nav (max width 767px)-->
+        <div class="mobile-nav">
+            <!-- Navbar Brand -->
+            <div class="amado-navbar-brand">
+                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+            </div>
+            <!-- Navbar Toggler -->
+            <div class="amado-navbar-toggler">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+   <header class="header-area clearfix">
+            <!-- Close Icon -->
+            <div class="nav-close">
+                <i class="fa fa-close" aria-hidden="true"></i>
+            </div>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="@Url.Action("index","Home")"><img src="/content/img//core-img/logo.png" alt=""></a>
+            </div>
+            <!-- Amado Nav -->
+            <!-- Button Group -->
+            <!-- Cart Menu -->
+            <div class="cart-fav-search mb-100">
+                <a href="@Url.Action("sepetim","Home")"><img src="/content/img//core-img/cart.png" alt=""> Sepetim <span>(0)</span></a>
+                @*<a href style="font-family:Arial=" #" class="fav-nav"><img src="/content/img//core-img/favorites.png" alt=""> Favori </a>*@
+                <a href style="font-family:Arial=" #" class="search-nav"><img src="/content/img//core-img/search.png" alt=""> Arama</a>
+            </div>
+            <!-- Social Button -->
+            <div class="social-info d-flex justify-content-between">
+                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+        </header>
+
+<div class="page-top-info">
+    <div class="container">
+        <div class="products-catagories-area " style="overflow:hidden;min-height:900px">
+            
+                <div class="amado-pro-catagory clearfix row " style="height:400px">
+                    <div class="col-12 col-sm-6  ">
+
+                        <link href="~/Content/css/kubra.css" rel="stylesheet" />
+                        <h4 class="urundetay">ÜRÜN DETAYI</h4>
+                        <div class="site-pagination">
+                            <a href="/">Ana Sayfa</a> /
+                            <div class="fotograf">
+
+                                <img src="@Model.resim" alt="">
+                            </div>
+                            <div>
+                                <a href="#" style="font-family:Arial;font-weight: bold">@Model.UrunKodu</a>
+                            </div>
+                            <div>
+                                <a href="#" style="font-family:Arial"> - @Model.Ad</a>
+                            </div>
+
+                            <div>
+
+                                <a href="#" style="font-family:Arial;font-size:15px;">@Model.aciklama</a>
+                            </div>
+                            <div>
+                                <button class="btn" onclick="" style="font-family:Arial;"><i></i> SEPETE EKLE</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+</div>
+
+
+</html>
